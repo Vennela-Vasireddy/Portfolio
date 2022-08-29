@@ -1,0 +1,382 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <title>Portfolio/Experience</title>
+  
+
+  <style>
+    /* style wallpaper and image */
+    .sidebar_youtube_box {
+      position: relative;
+    }
+
+    .img-stack {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+    }
+
+    .play_png {
+      z-index: 2;
+    }
+
+    .name {
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+    }
+
+    /* style wallpaper and image */
+
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Montserrat";
+    }
+
+    .container-1 {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      padding: 100px 0;
+
+    }
+
+    .timeline {
+      width: 80%;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .timeline ul {
+      list-style: none;
+    }
+
+    .timeline ul li {
+      padding: 20px;
+      background-color: #1e1f22;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .timeline ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-content h1 {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+
+    .timeline-content .date {
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: black;
+    }
+
+    @media only screen and (min-width: 250px) {
+      .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+      }
+
+      .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+      }
+
+      .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+      }
+
+      .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+      }
+
+      .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+      }
+
+      .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+      }
+
+      .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+      }
+
+      .timeline-content .date {
+        position: absolute;
+        top: -30px;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+   <!-- wallpaper and image -->
+<section> 
+  <div class="sidebar_youtube_box">
+    <div class="img-responsive play_png" style="width: 100%; height: 350px;">
+      <img style="width: 100%;height: 100%" src="Images/P-wallpaper.jpg"/>
+      <h3 class="name"><b> <center>Vennela Vasireddy</center>  
+                           <center> MS IN CS AT CAL STATE FULLERTON </center> </b> </h3>
+   </div>
+    <div >
+      <img src="Images/p-woman.jpg"  class="img-thumbnail img-stack rounded-circle" style="width:30vh;" >
+    </div>
+
+  </div>
+</section>
+  
+  <!-- wallpaper and image -->
+<br> <br> <br> <br> <br>
+
+
+<div style="padding: 15px;">  
+  <center>  
+    <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\index.html"> 
+      <button class="btn  btn-md mr-3 mt-2"  role="button" style="border-radius: 10px;">
+     <i class="fa fa-user-circle-o" style="font-size:24px; padding: 5px;"></i>  HOME  </button> </a>
+
+     <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Education.html" >
+  <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+    <i class="fa fa-graduation-cap" style="font-size:24px; padding: 5px;"> </i>   EDUCATION  </button>  </a>
+  
+    <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Experience.html"  >
+      <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;" disabled>
+        <i class="fa fa-briefcase" style="font-size:24px; padding: 5px;"> </i>  EXPERIENCE  </button>  </a>
+
+    <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Achievements.html" >
+
+  <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+   <i class="fa fa-trophy" style="font-size:24px; padding: 6px;"> </i> ACHIEVEMENTS </button> </a> 
+
+    <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Hobbies.html" >
+  <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+    <i class="fa fa-leaf" style="font-size:24px; padding: 5px;">
+    </i>   HOBBIES  </button> </a>
+  
+  </center>
+  
+  
+</div>
+
+<div class = "row">
+  
+  <!-- <div class = "col-lg-1" >
+
+    <ul class="nav md-pills pills-info w3-xxlarge">
+      <li class="nav-item">
+        <a class="nav-link active"  href="C:\Users\DELL\Desktop\Portfolio-new\Portfolio.html" ><i class="fa fa-user-circle-o pr-xl-4 pr-md-2 pr-2"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Education.html" ><i class="fa fa-graduation-cap pr-xl-4 pr-md-2 pr-2"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Projects.html" ><i class="fa fa-briefcase pr-xl-4 pr-md-2 pr-2"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Hobbies.html" ><i class="fa fa-leaf pr-xl-4 pr-md-2 pr-2"></i></a>
+      </li>
+    </ul>
+    
+  
+  </div> -->
+
+  <div class = "col-lg-11 col-sm-12 ml-xl-0 ml-4">
+             <div class="container container-1">
+               <div class="timeline">
+                 <ul>
+
+                  
+
+                   <li>
+                     <div class="timeline-content">
+                       <h3 class="date" style=" font-weight: 650; font-size: 14px;"> July 30 – September 30, 2020 </h3>
+                       <h1>  Badlav Seva Samiti (NGO)  </h1>
+                       <p style=" font-weight: 400; ">
+                         <h5> <u> <i> Content Writer Intern</i></u>   </h5>
+                         <p style="list-style-type:circle;">  Responsible to create content for blog, social media, and the company's website. </p>
+     
+                             <p style="list-style-type:circle;">After a month of work promoted as a general manager intern. </p>
+                         </p> 
+                     </div>
+                   </li>
+                   <li>
+                     <div class="timeline-content">
+                       <h3 class="date" style=" font-weight: 650; font-size: 14px;"> May 1 - June 30, 2021  </h3>
+                       <h1> Let’s Vume </h1>
+                       <p style=" font-weight: 400; ">
+                       <h5> <u><i>Software Development Intern</i> </u>  </h5>                                    
+     
+     <p style="list-style-type:circle;"> 
+       Responsible for choosing and implementing visual-interactive features, 
+       design of web pages and adding new features to improve the user experience. </p>	 
+     
+                           
+     
+                          </p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="timeline-content">
+                       <h3 class="date" style=" font-weight: 650; font-size: 14px;" > July 28, 2021 - July 24, 2022    </h3>
+                       <h1> Accenture Pvt. Ltd </h1>
+                       <p style=" font-weight: 400; "> 
+                         <h5> <u> <i> Application Development Associate </i></u>  </h5> 
+                         <p style="list-style-type:circle;"> 
+                          As an application development associate I was assigned to salesforce stream. 
+                          I have successfully finished my stream specific training with 90.7%.
+                          <br> After training I was assigned to a project as a salesforce developer, 
+                          my responsibilities include developing components, 
+                          debugging the apex classes and implementing triggers as per the requirements   
+                        </p>	 
+     
+                       </p>
+                     </div>
+                   </li>
+     
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+    
+<br> <br>
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Gmail -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://vennelavaasireddy@gmail.com"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://instagram.com/Vennela_Vaasireddy"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.linkedin.com/in/vennela-v"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/Vennela-Vasireddy"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="C:\Users\DELL\Desktop\Updated_Portfolio\Portfolio.html">vennelavasireddy</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+
+</body>
+
+
+</html>

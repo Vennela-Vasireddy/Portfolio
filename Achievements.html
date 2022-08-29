@@ -1,0 +1,442 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+    <title>Portfolio/Achievements</title>
+<style>
+
+/* style wallpaper and image */
+.sidebar_youtube_box {
+      position: relative;
+    }
+
+    .img-stack {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+    }
+
+    .play_png {
+      z-index: 2;
+    }
+
+    .name {
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+    }
+
+    /* style wallpaper and image */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+.project{
+    min-width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover {
+    height: 450px
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 190px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px
+    }
+}
+
+.deepshd {
+  /* color: #2c2c2c;
+ background-color: #d5d5d5; 
+  letter-spacing: .05em; */
+   text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2); 
+  /* text-shadow: 0px 0px 0px #111, 2px 1.5px 2px #363636; */
+}
+
+</style>
+    
+</head>
+
+<body>
+
+    <!-- wallpaper and image -->
+<section> 
+    <div class="sidebar_youtube_box">
+      <div class="img-responsive play_png" style="width: 100%; height: 350px;">
+        <img style="width: 100%;height: 100%" src="Images/P-wallpaper.jpg"/>
+        <h3 class="name">
+          <b> <center>Vennela Vasireddy</center>  
+              <center> MS IN CS AT CAL STATE FULLERTON </center>
+              
+            </b> 
+        </h3>
+     </div>
+      <div >
+        <img src="Images/p-woman.jpg"  class="img-thumbnail img-stack rounded-circle" style="width:30vh;" >
+      </div>
+  
+    </div>
+</section>
+  <br> <br> <br> <br> <br> 
+    <!-- wallpaper and image -->
+
+    <div style="padding: 15px;">  
+      <center>  
+        <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\index.html"> 
+          <button class="btn  btn-md mr-3 mt-2"  role="button" style="border-radius: 10px;">
+         <i class="fa fa-user-circle-o" style="font-size:24px; padding: 5px;"></i>  HOME  </button> </a>
+    
+         <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Education.html" >
+      <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+        <i class="fa fa-graduation-cap" style="font-size:24px; padding: 5px;"> </i>   EDUCATION  </button>  </a>
+      
+        <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Experience.html" >
+          <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+            <i class="fa fa-briefcase" style="font-size:24px; padding: 5px;"> </i>  EXPERIENCE  </button>  </a>
+    
+        <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Achievements.html"  >
+    
+      <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;" disabled>
+    
+        
+        <i class="fa fa-trophy" style="font-size:24px; padding: 6px;">
+        </i> ACHIEVEMENTS </button> </a> 
+    
+        <a href="C:\Users\DELL\OneDrive\Desktop\Updated_Portfolio\Hobbies.html" >
+      <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
+        <i class="fa fa-leaf" style="font-size:24px; padding: 5px;">
+        </i>   HOBBIES  </button> </a>
+      
+      </center>
+      
+      
+    </div>
+
+    <!-- <h2 class="deepshd">  <b><center>PROJECTS</center> </b> </h2> -->
+
+
+  
+    <!-- <div class = "row"> -->
+      <!-- <div class = "col-lg-1">
+
+        <ul class="nav md-pills pills-info w3-xxlarge">
+          <li class="nav-item">
+            <a class="nav-link active"  href="C:\Users\DELL\Desktop\Portfolio-new\Portfolio.html" ><i class="fa fa-user-circle-o pr-xl-4 pr-md-2 pr-2"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Education.html" ><i class="fa fa-graduation-cap pr-xl-4 pr-md-2 pr-2"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Projects.html" ><i class="fa fa-briefcase pr-xl-4 pr-md-2 pr-2"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="C:\Users\DELL\Desktop\Portfolio-new\Hobbies.html" ><i class="fa fa-leaf pr-xl-4 pr-md-2 pr-2"></i></a>
+          </li>
+        </ul>
+        
+      
+      </div> -->
+
+      <!-- <div class = "col-lg-8 col-sm-12 ml-xl-0 ml-4"> -->
+        <br> <br> 
+        <h2 class="deepshd">  <b><center>PROJECTS</center> </b> </h2>
+      
+      
+        <div class="project">
+          <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer' > <img src='Images/p-1.png' > 
+                </div>
+                <div class="content">
+                    <h6> <b> Automated Parking Lot - 2019  </b></h6>
+                    <p>               
+                      It is an optimal solution, with which people can park their vehicle without mankind. <br>
+                      It aims to design an advanced parking lot management system with sensor based gate control, liquid crystal display.
+                      
+                      </p>
+                </div>
+            </div>
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer' style="height: 150px;" > <img src='Images/p-2.png'> </div>
+                <div class="content">
+                    <h6> <b>  Alumni Portal - 2020 </b> </h6>
+                    <p> 
+                    The purpose of this portal is to connect alumni and existing students from a variety of universities or colleges. They can share information through posts, and can search and get to know each other.
+                       </p>
+                      
+             
+        
+                       
+                </div>
+            </div>
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer' style="width: 230px;"> <img src='Images/p-3.jpg'> </div>
+                <div class="content">
+                    <h6> <b>  Light Weight Cryptography Algorithms for IOT Devices - 2021 </b>  </h6>
+                    <p> 
+                      
+                  We first compared different light weight encryption algorithms. And build a small IOT model for home. 
+                  Then used the best of encryption algorithms compared, before transporting any data onto the internet and decrypting it at destination to get back the original data.
+                      
+        
+                    </p>
+                </div>
+            </div>
+        
+      
+        
+
+        
+      </div>
+      </div>
+      <!-- </div>
+            </div> -->
+
+
+            <h2 class="deepshd">  <b><center> CERTIFICATIONS </center> </b> </h2>
+
+            <div class="project">
+              <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+                <div class="card d-flex position-relative flex-column">
+                    <div class='imgContainer' > <img src='Images/Salesforce_Certified_Administrator.jpg' > 
+                    </div>
+                    <div class="content">
+                        
+                        <p>               
+                          I'm a Salesforce Certified Administrator
+                          </p>
+                    </div>
+                  </div>
+            
+          </div>
+          </div>
+
+          <h2 class="deepshd">  <b><center> AWARDS </center> </b> </h2>
+
+          <div class="project">
+            <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+              <div class="card d-flex position-relative flex-column">
+                  <div class='imgContainer' > <img src='Images/Bug-Resolver- Certificate.jpg' > 
+                  </div>
+                  <div class="content">
+                      
+                      <p>               
+                        Secured 1 <suffix>st <suffix> position in Bug Resolver coding event, held by the tech-vision club, Sreenidhi 
+                        Institute of Science and Technology.
+                        
+                        </p>
+                  </div>
+              </div>
+
+              <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer' > <img src='Images/General_Elections_Certificate-1.jpg'> </div>
+                <div class="content">
+                   
+                    <p> 
+                      Certificate for participation in Webcasting on the poll day during General Elections for 
+                      Telangana State Legislative Assembly in Medchal – Malkajgiri District. 
+                      
+                    </p>
+                    
+                       
+                </div>
+            </div>
+
+              <div class="card d-flex position-relative flex-column">
+                  <div class='imgContainer' > <img src='Images/Codevita_certificate-1.jpg'> </div>
+                  <div class="content">
+                     
+                      <p> 
+                        Award Certificate for clearing Round 1 in the CodeVita Season 9 conducted by TATA 
+Consultancy Services. 
+
+                      </p>
+                      
+                         
+                  </div>
+              </div>
+          
+        </div>
+        </div>
+
+          <h2 class="deepshd">  <b><center> PAPERS PUBLISHED </center> </b> </h2>
+
+          <div class="project">
+            <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+              <div class="card d-flex position-relative flex-column">
+                  <div class='imgContainer' > <img src='Images/PAPER-PUBLISHED-1.jpg' > 
+                  </div>
+                  <div class="content">
+                      
+                      <p>               
+                        I gave a technical seminar on Image Dehazing, which my technical seminar instructor found 
+                        interesting; therefore I published "A Comparative Analysis of Image Dehazing Techniques for 
+                        Halo Effect Suppression" paper in the Journal of Engineering Sciences with his help. 
+                        
+                        </p>
+                  </div>
+              </div>
+              <div class="card d-flex position-relative flex-column">
+                  <div class='imgContainer' > <img src='Images/2nd-Paper-published.jpg'> </div>
+                  <div class="content">
+                     
+                      <p> 
+                        Published paper in International Journal for Research in Applied Science & Engineering 
+                        Technology (IJRASET) on  Lightweight Cryptography Algorithms for IoT Devices.
+                      </p>
+                      
+                         
+                  </div>
+              </div>
+          
+        </div>
+        </div>
+
+
+
+
+    <br>
+    
+
+ 
+    
+  
+  
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Gmail -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://vennelavaasireddy@gmail.com"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://instagram.com/Vennela_Vaasireddy"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.linkedin.com/in/vennela-v"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/Vennela-Vasireddy"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="C:\Users\DELL\Desktop\Updated_Portfolio\Portfolio.html">vennelavasireddy</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+</body>
+
+</html>
