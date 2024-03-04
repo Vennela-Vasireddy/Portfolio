@@ -1,339 +1,455 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-          crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-      
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-      
-        <title>Portfolio/Education</title>
-        
-      
-        <style>
-          /* style wallpaper and image */
-          .sidebar_youtube_box {
-            position: relative;
-          }
-      
-          .img-stack {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            z-index: 1;
-          }
-      
-          .play_png {
-            z-index: 2;
-          }
-      
-          .name {
-            position: absolute;
-            top: 46%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            z-index: 1;
-          }
-      
-          /* style wallpaper and image */
-          
-          .title {
- 
-            margin-bottom: 50px;
-            text-transform: uppercase;
-        }
-        
-        .card-block {
-            font-size: 1em;
-            position: relative;
-            margin: 0;
-            padding: 1em;
-            border: none;
-            border-top: 1px solid rgba(34, 36, 38, .1);
-            box-shadow: none;
-             
-        }
-        .card {
-            font-size: 1em;
-            overflow: hidden;
-            padding: 5;
-            border: none;
-            border-radius: .28571429rem;
-            box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-            margin-top:20px;
-        }
-        
-        
-        .btn {
-          margin-top: auto;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
 
-            .card {
-                border: none;
-                border-radius: 10px
-            }
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-            .c-details span {
-                font-weight: 300;
-                font-size: 13px
-            }
+    <title>Portfolio/Education</title>
 
-            .icon {
-                width: 50px;
-                height: 50px;
-                background-color: #eee;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 39px
-            }
+    <style>
+      /* style wallpaper and image */
+      .sidebar_youtube_box {
+        position: relative;
+      }
 
-            .badge span {
-              
-                width: 60px;
-                height: 25px;
-                padding-bottom: 3px;
-                border-radius: 5px;
-                display: flex;
-                color: black;
-                justify-content: center;
-                align-items: center
-            }
+      .img-stack {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+      }
 
-            .progress {
-                height: 10px;
-                border-radius: 10px
-            }
+      .play_png {
+        z-index: 2;
+      }
 
-                .progress div {
-                    background-color: black
-                }
+      .name {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+      }
 
-            .text1 {
-                font-size: 14px;
-                font-weight: 600
-            }
+      /* style wallpaper and image */
 
-            .text2 {
-                color: #a5aec0
-            } 
+      .title {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+      }
 
+      .card-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, 0.1);
+        box-shadow: none;
+      }
+      .card {
+        font-size: 1em;
+        overflow: hidden;
+        padding: 5;
+        border: none;
+        border-radius: 0.28571429rem;
+        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        margin-top: 20px;
+      }
 
+      .btn {
+        margin-top: auto;
+      }
 
-        </style>
-    </head>
-      
-    <body>
+      .card {
+        border: none;
+        border-radius: 10px;
+      }
 
-        <!-- wallpaper and image -->
-        <section>
-            <div class="sidebar_youtube_box">
-                <div class="img-responsive play_png" style="width: 100%; height: 350px;">
-                    <img style="width: 100%;height: 100%" src="Pictures/P-wallpaper.jpg" />
-                    <h3 class="name">
-                        <b>
-                            <center>Vennela Vasireddy</center>
-                            <center> MS IN CS AT CAL STATE FULLERTON </center>
-                        </b>
-                    </h3>
+      .c-details span {
+        font-weight: 300;
+        font-size: 13px;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #eee;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 39px;
+      }
+
+      .badge span {
+        width: 60px;
+        height: 25px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .progress {
+        height: 10px;
+        border-radius: 10px;
+      }
+
+      .progress div {
+        background-color: black;
+      }
+
+      .text1 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .text2 {
+        color: #a5aec0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- wallpaper and image -->
+    <section>
+      <div class="sidebar_youtube_box">
+        <div class="img-responsive play_png" style="width: 100%; height: 350px">
+          <img
+            style="width: 100%; height: 100%"
+            src="Pictures/P-wallpaper.jpg"
+          />
+          <h3 class="name">
+            <b>
+              <center>Vennela Vasireddy</center>
+              <center>MS IN CS AT CAL STATE FULLERTON</center>
+            </b>
+          </h3>
+        </div>
+        <div>
+          <img
+            src="Pictures/p-woman.jpg"
+            class="img-thumbnail img-stack rounded-circle"
+            style="width: 30vh"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- wallpaper and image -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div style="padding: 15px">
+      <center>
+        <a href="index.html">
+          <button
+            class="btn btn-md mr-3 mt-2"
+            role="button"
+            style="border-radius: 10px"
+          >
+            <i
+              class="fa fa-user-circle-o"
+              style="font-size: 24px; padding: 5px"
+            ></i>
+            HOME
+          </button>
+        </a>
+
+        <a href="Education.html">
+          <button
+            class="btn btn-md mr-3 mt-2"
+            role="button"
+            style="border-radius: 10px"
+            disabled
+          >
+            <i
+              class="fa fa-graduation-cap"
+              style="font-size: 24px; padding: 5px"
+            >
+            </i>
+            EDUCATION
+          </button>
+        </a>
+
+        <a href="Experience.html">
+          <button
+            class="btn btn-md mr-3 mt-2"
+            role="button"
+            style="border-radius: 10px"
+          >
+            <i class="fa fa-briefcase" style="font-size: 24px; padding: 5px">
+            </i>
+            EXPERIENCE
+          </button>
+        </a>
+
+        <a href="Achievements.html">
+          <button
+            class="btn btn-md mr-3 mt-2"
+            role="button"
+            style="border-radius: 10px"
+          >
+            <i class="fa fa-trophy" style="font-size: 24px; padding: 6px"> </i>
+            ACHIEVEMENTS
+          </button>
+        </a>
+
+        <a href="Hobbies.html">
+          <button
+            class="btn btn-md mr-3 mt-2"
+            role="button"
+            style="border-radius: 10px"
+          >
+            <i class="fa fa-leaf" style="font-size: 24px; padding: 5px"> </i>
+            HOBBIES
+          </button>
+        </a>
+      </center>
+    </div>
+
+    <div class="container mt-5 mb-3">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-row align-items-center">
+                <div class="ms-2 c-details">
+                  <h6 class="mb-0">Fullerton, CA, USA</h6>
+                  <span> 2022-2024 </span>
                 </div>
-                <div>
-                    <img src="Pictures/p-woman.jpg" class="img-thumbnail img-stack rounded-circle" style="width:30vh;">
-                </div>
-
+              </div>
+              <div class="badge"><span>MS IN CS</span></div>
             </div>
+            <div class="mt-5">
+              <h3 class="heading">
+                California State University,<br />Fullerton
+              </h3>
+              <div class="mt-5">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 96%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="mt-3">
+                  <span class="text1">
+                    3.75 <span class="text2"> out of 4</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-row align-items-center">
+                <div class="ms-2 c-details">
+                  <h6 class="mb-0">Hyderabad, India</h6>
+                  <span>2017-2021</span>
+                </div>
+              </div>
+              <div class="badge"><span>B.Tech, ECE</span></div>
+            </div>
+            <div class="mt-5">
+              <h3 class="heading">
+                Sreenidhi Institute Of<br />Science and Technology
+              </h3>
+              <div class="mt-5">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="mt-3">
+                  <span class="text1"
+                    >8.99 <span class="text2"> out of 10 GPA</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-row align-items-center">
+                <div class="ms-2 c-details">
+                  <h6 class="mb-0">Hyderabad, INDIA</h6>
+                  <span> 2015-2017 </span>
+                </div>
+              </div>
+              <div class="badge"><span>Intermediate</span></div>
+            </div>
+            <div class="mt-5">
+              <h3 class="heading">Narayana<br />Junior College</h3>
+              <div class="mt-5">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 98%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="mt-3">
+                  <span class="text1">
+                    981 <span class="text2"> out of 1000</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-row align-items-center">
+                <div class="ms-2 c-details">
+                  <h6 class="mb-0">Kodad, INDIA</h6>
+                  <span>2014-2015</span>
+                </div>
+              </div>
+              <div class="badge"><span>SSC</span></div>
+            </div>
+            <div class="mt-5">
+              <h3 class="heading">Sri Chaitanya <br />Techno School</h3>
+              <div class="mt-5">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 98%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="mt-3">
+                  <span class="text1"
+                    >9.8<span class="text2"> out of 10 GPA</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Gmail -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://vennelavaasireddy@gmail.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+          >
+            <i class="fa fa-google"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://instagram.com/Vennela_Vaasireddy"
+            role="button"
+            data-mdb-ripple-color="dark"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.linkedin.com/in/vennela-v"
+            role="button"
+            data-mdb-ripple-color="dark"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://github.com/Vennela-Vasireddy"
+            role="button"
+            data-mdb-ripple-color="dark"
+          >
+            <i class="fa fa-github"></i>
+          </a>
         </section>
-
-        <!-- wallpaper and image -->
-        <br> <br> <br> <br> <br>
-
-
-        <div style="padding: 15px;">
-            <center>
-                <a href="index.html">
-                    <button class="btn  btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
-                        <i class="fa fa-user-circle-o" style="font-size:24px; padding: 5px;"></i>  HOME
-                    </button>
-                </a>
-
-                <a href="Education.html">
-                    <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;" disabled>
-                        <i class="fa fa-graduation-cap" style="font-size:24px; padding: 5px;"> </i>   EDUCATION
-                    </button>
-                </a>
-
-                <a href="Experience.html">
-                    <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
-                        <i class="fa fa-briefcase" style="font-size:24px; padding: 5px;"> </i>  EXPERIENCE
-                    </button>
-                </a>
-
-                <a href="Achievements.html">
-
-                    <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
-
-
-                        <i class="fa fa-trophy" style="font-size:24px; padding: 6px;">
-                        </i> ACHIEVEMENTS
-                    </button>
-                </a>
-
-                <a href="Hobbies.html">
-                    <button class="btn btn-md mr-3 mt-2" role="button" style="border-radius: 10px;">
-                        <i class="fa fa-leaf" style="font-size:24px; padding: 5px;">
-                        </i>   HOBBIES
-                    </button>
-                </a>
-
-            </center>
-
-
-        </div>
-
-
-
-        <div class="container mt-5 mb-3">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-3 mb-2">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                                
-                                <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Hyderabad</h6> <span>2017-2021</span>
-                                </div>
-                            </div>
-                            <div class="badge"> <span>B.Tech</span> </div>
-                        </div>
-                        <div class="mt-5">
-                            <h3 class="heading">Sreenidhi Institute Of<br>Science and Technology</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="mt-3"> <span class="text1">8.99 <span class="text2"> out of 10 GPA</span></span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-2">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                                
-                                <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Hyderabad</h6> <span> 2015-2017  </span>
-                                </div>
-                            </div>
-                            <div class="badge"> <span>Intermediate</span> </div>
-                        </div>
-                        <div class="mt-5">
-                            <h3 class="heading">Narayana<br>Junior College</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="mt-3"> <span class="text1"> 981 <span class="text2"> out of 1000</span></span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-2">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                          
-                                <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Kodad</h6> <span>2014-2015</span>
-                                </div>
-                            </div>
-                            <div class="badge"> <span>SSC</span> </div>
-                        </div>
-                        <div class="mt-5">
-                            <h3 class="heading">Sri Chaitanya <br>Techno School</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="mt-3"> <span class="text1">9.8<span class="text2"> out of 10 GPA</span></span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <br>
-
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
-            <!-- Grid container -->
-            <div class="container pt-4">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Gmail -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                       href="https://vennelavaasireddy@gmail.com"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa fa-google"></i>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                       href="https://instagram.com/Vennela_Vaasireddy"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-
-                    <!-- Linkedin -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                       href="https://www.linkedin.com/in/vennela-v"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <!-- Github -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                       href="https://github.com/Vennela-Vasireddy"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
-            <!-- Copyright -->
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-dark" href="index.html">vennelavasireddy</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-
-
-    </body>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2020 Copyright:
+        <a class="text-dark" href="index.html">vennelavasireddy</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
 </html>
